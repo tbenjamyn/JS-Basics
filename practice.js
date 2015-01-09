@@ -54,7 +54,7 @@ welcome();
 
 var adder = function (numbers) {
 
-  for (var i = 1; i < arguments.length; i++) {
+  for (i = 1; i < arguments.length; i++) {
     numbers += numbers;
     console.log(numbers);  
   }
@@ -115,10 +115,9 @@ alert(newMyName());
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
 var outerFn = function () {
-  var anon = function () {
+  return function () {
     return "Thomas Tran";
   };
-  return anon;
 };
 
 
